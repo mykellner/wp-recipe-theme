@@ -2,4 +2,4 @@
 School assignment, Wordpress theme development. 
 
 
-some stuff..
+some stuff...
