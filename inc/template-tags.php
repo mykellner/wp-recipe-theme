@@ -265,3 +265,95 @@ if ( ! function_exists( 'bootscore_ie_alert' ) ) :
 endif;
 
 
+// Recipe Details --> 
+
+// Recipe Servings
+
+if (!function_exists('bootscore_recipe_servings')) {
+	function bootscore_recipe_servings()
+	{
+
+		if (!function_exists('get_field')) {
+			echo 'Please install ACF plugin';
+			return;
+		}
+
+		$servings = get_field('servings', false, false);
+		
+		if (!empty($servings)) {
+			printf(
+				'<div class="badge bg-success mb-2">%s</div>',
+				sprintf(
+					__('Servings: <strong> %s </strong>', 'bootscore'),
+					$servings
+				)
+			);
+		}
+	}
+}
+
+// recipe servings end. 
+
+// Recipe instructions. 
+
+if (!function_exists('bootscore_recipe_instructions')) {
+	function bootscore_recipe_instructions()
+	{
+		// $movie_score = get_post_meta(get_the_ID(), 'movie_score', true);
+
+		if (!function_exists('get_field')) {
+			echo 'Please install ACF plugin';
+			return;
+		}
+
+		echo '<ol>';
+
+			if(have_rows('instructions')) {
+
+				while(have_rows('instructions')) {
+					the_row();
+
+					$instruction = get_sub_field('instruction');
+
+					printf('<li>%s</li>', $instruction);
+
+				}
+			}
+
+		echo '</ol>';
+	}
+}
+
+// recipe instructions end. 
+
+// Recipe ingredient list
+
+
+if (!function_exists('bootscore_recipe_ingredients')) {
+	function bootscore_recipe_ingredients()
+	{
+		// $movie_score = get_post_meta(get_the_ID(), 'movie_score', true);
+
+		if (!function_exists('get_field')) {
+			echo 'Please install ACF plugin';
+			return;
+		}
+
+		echo '<ul>';
+
+			if(have_rows('ingredients')) {
+
+				while(have_rows('ingredients')) {
+					the_row();
+
+					$ingredient = get_sub_field('ingredient');
+					$value = get_sub_field('value');
+
+					printf('<li><strong>%s </strong>%s</li>', $value, $ingredient);
+
+				}
+			}
+
+		echo '</ul>';
+	}
+}

@@ -36,6 +36,9 @@
                     </header>
 
                     <div class="entry-content">
+                        <?php bootscore_recipe_servings(); ?>
+                        <?php bootscore_recipe_ingredients(); ?>
+                        <?php bootscore_recipe_instructions(); ?>
                         <?php the_content(); ?>
                     </div>
 
