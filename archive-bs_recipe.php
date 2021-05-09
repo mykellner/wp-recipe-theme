@@ -24,7 +24,7 @@
                     <!-- Title & Description -->
                     <header class="page-header mb-4">
                         <h1><?php the_archive_title(); ?></h1>
-                        <h2>Recipe taxanomy category page</h2>
+                        <h2>Recept arkiv.php</h2>
                         <?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
                     </header>
 
@@ -48,12 +48,14 @@
                                             <?php the_title(); ?>
                                         </a>
                                     </h2>
+                                    <!-- Meta -->
+                                 
                                     <!-- Excerpt & Read more -->
                                     <div class="card-text mt-auto">
                                         <?php the_excerpt(); ?> <a class="read-more btn btn-primary" href="<?php the_permalink(); ?>"><?php _e('Read more »', 'bootscore'); ?></a>
                                     </div>
                                     <!-- Tags -->
-                                    <?php bootscore_tags(); ?>
+                                    <?php bootscore_recipe_tags(); ?>
                                 </div>
                             </div>
                         </div>
