@@ -37,7 +37,7 @@
                             <?php if (has_post_thumbnail() )
 							echo '<div class="card-img-left-md col-lg-5">' . get_the_post_thumbnail(null, 'medium') . '</div>';
 							?>
-                            <div class="col">
+                            <div class="col d-flex">
                                 <div class="card-body">
                                     
                                     <?php bootscore_recipe_category_badge(); ?>
@@ -54,9 +54,13 @@
                                     <div class="card-text mt-auto">
                                         <?php the_excerpt(); ?> <a class="read-more btn btn-primary" href="<?php the_permalink(); ?>"><?php _e('Read more »', 'bootscore'); ?></a>
                                     </div>
-                                    <!-- Tags -->
-                                    <?php bootscore_recipe_tags(); ?>
+                                    
                                 </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wrapper d-flex flex-row-reverse">
+                            <?php bootscore_recipe_tags_badge(); ?>
                             </div>
                         </div>
                     </div>

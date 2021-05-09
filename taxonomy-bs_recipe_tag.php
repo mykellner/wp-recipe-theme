@@ -24,7 +24,7 @@
                     <!-- Title & Description -->
                     <header class="page-header mb-4">
                         <h1><?php the_archive_title(); ?></h1>
-                        <h2>Recipe taxanomy category page</h2>
+                        <h2>Recipe taxanomy Tag page</h2>
                         <?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
                     </header>
 
