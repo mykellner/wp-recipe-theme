@@ -23,6 +23,7 @@
                         <?php the_post(); ?>
                         <?php bootscore_category_badge(); ?>
                         <?php the_title('<h1>', '</h1>'); ?>
+                        <?php bootscore_recipe_category_badge(); ?>
                         <p class="entry-meta">
                             <small class="text-muted">
                                 <?php
