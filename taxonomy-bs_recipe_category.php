@@ -8,6 +8,7 @@
 	 */
 	
 	get_header();
+    get_template_part('template-parts/header-image');
 	?>
 
 <div id="content" class="site-content container py-5 mt-5">
@@ -23,7 +24,9 @@
 
                     <!-- Title & Description -->
                     <header class="page-header mb-4">
+                        <?php if(!get_header_image()) : ?>
                         <h1><?php the_archive_title(); ?></h1>
+                        <?php endif; ?>
                         <h2>Recipe taxanomy category page</h2>
                         <?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
                     </header>
