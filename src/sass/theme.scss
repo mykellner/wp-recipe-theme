@@ -37,4 +37,17 @@
     font-family: 'Fjalla One', sans-serif;
 }
 
+#secondary {
+    
+    a {
+        color: rgba(6, 7, 6, 0.829);
+        text-decoration: none;
+        
+    }
 
+    a:hover {
+        color: rgb(70, 156, 145);
+        padding-left: 8px;
+    }
+
+}

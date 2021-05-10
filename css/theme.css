@@ -10952,3 +10952,12 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
 .site-title-header {
   font-family: "Fjalla One", sans-serif;
 }
+
+#secondary a {
+  color: rgba(6, 7, 6, 0.829);
+  text-decoration: none;
+}
+#secondary a:hover {
+  color: #469c91;
+  padding-left: 8px;
+}
