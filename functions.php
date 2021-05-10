@@ -630,3 +630,14 @@ function bs_customizer($wp_customizer) {
 	]);
 }
 add_action('customize_register', 'bs_customizer');
+
+function bs_navbar_brand() {
+    $custom_logo_id = get_theme_mod('custom_logo');
+    $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+
+    if ($logo) {
+        echo '<div class="d-flex align-items-end"><img src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '"><h3 class="site-title-header ms-3">', get_bloginfo('name'), '</h2></div>';
+    } else {
+        echo get_bloginfo('name');
+    }
+}

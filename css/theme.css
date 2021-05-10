@@ -10948,3 +10948,7 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
      object-fit: cover;
   width: 100%;
 }
+
+.site-title-header {
+  font-family: "Fjalla One", sans-serif;
+}
