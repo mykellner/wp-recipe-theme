@@ -10926,3 +10926,22 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
 .form-select {
   -webkit-appearance: none;
 }
+
+#site-header {
+  position: relative;
+}
+#site-header .header-text {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#site-header img {
+  min-height: 20vh;
+  max-height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}

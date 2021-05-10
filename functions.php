@@ -83,6 +83,32 @@ if ( ! function_exists( 'bootscore_setup' ) ) :
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
+        add_theme_support('custom-logo', [
+            'height' => 50,
+            'width' => 200,
+        ]);
+    
+        /**
+         * Declare support for custom header image.
+         */
+        add_theme_support('custom-header', [
+            // Display the header text along with the image
+            'header-text' => true,
+    
+            // Header image width (in pixels)
+            'width' => 2560,
+    
+            // Header image height (in pixels)
+            'height' => 800,
+    
+            // Allow flexible image width
+            'flex-width' => true,
+    
+            // Allow flexible image height
+            'flex-height' => true,
+        ]);
+    
+
 	}
 endif;
 add_action( 'after_setup_theme', 'bootscore_setup' );

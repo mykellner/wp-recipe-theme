@@ -13,6 +13,7 @@
      */
 
     get_header();
+    get_template_part('template-parts/header-image');
     ?>
 <div id="content" class="site-content container py-5 mt-5">
     <div id="primary" class="content-area">
@@ -25,7 +26,10 @@
             <header class="entry-header">
                 <?php the_post(); ?>
                 <!-- Title -->
-                <?php the_title('<h1>', '</h1>'); ?>
+                <?php if (!get_header_image()) : ?>
+                    <?php the_title('<h1>', '</h1>'); ?>
+	            <?php endif; ?>
+                
                 <!-- Featured Image-->
                 <?php bootscore_post_thumbnail(); ?>
                 <!-- .entry-header -->
