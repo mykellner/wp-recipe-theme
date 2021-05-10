@@ -18,7 +18,8 @@
         <?php bs_after_primary(); ?>  
 
         <div class="row">
-            <div class="col">
+        <?php get_sidebar(); ?>
+            <div class="col order-first order-md-last">
 
                 <main id="main" class="site-main">
 
@@ -27,7 +28,6 @@
                         <?php if(!get_header_image()) : ?>
                         <h1><?php the_archive_title(); ?></h1>
                         <?php endif; ?>
-                        <h2>Recipe taxanomy category page</h2>
                         <?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
                     </header>
 
@@ -76,7 +76,7 @@
 
             </div><!-- col -->
 
-            <?php get_sidebar(); ?>
+          
         </div><!-- row -->
 
     </div><!-- #primary -->

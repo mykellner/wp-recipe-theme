@@ -19,7 +19,6 @@
                 <main id="main" class="site-main">
 
                     <header class="entry-header">
-                        <h2>single recipe.php</h2>
                         <?php the_post(); ?>
                         <?php bootscore_category_badge(); ?>
                         <?php the_title('<h1>', '</h1>'); ?>
