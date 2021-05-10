@@ -14,6 +14,8 @@
         <?php the_breadcrumb(); ?>
 
         <div class="row">
+        <?php get_sidebar(); ?>
+
             <div class="col-md-8 col-xxl-9">
 
                 <main id="main" class="site-main">
