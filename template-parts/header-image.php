@@ -28,7 +28,7 @@
 
 		}
 	?>
-	<div id="site-header">
+	<div id="site-header-img">
 		<img src="<?php header_image(); ?>"
 			width="<?php echo absint(get_custom_header()->width); ?>"
 			height="<?php echo absint(get_custom_header()->height); ?>"
