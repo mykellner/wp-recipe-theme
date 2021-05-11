@@ -19,7 +19,8 @@
 
         <div class="row">
         <?php get_sidebar(); ?>
-            <div class="col order-first order-md-last">
+
+            <div class="col order-last">
 
                 <main id="main" class="site-main">
 
@@ -58,7 +59,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer d-flex justify-content-between">
+                            <p class="recipe-tags"><?php _e('Recipe tags: ', 'bootscore'); ?></p>
                             <div class="wrapper d-flex flex-row-reverse">
                             <?php bootscore_recipe_tags_badge(); ?>
                             </div>

@@ -10973,7 +10973,8 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
 }
 
 .recipe-tags-badges {
-  margin-top: 8px;
+  margin-top: 3px;
+  margin-bottom: 0px;
 }
 .recipe-tags-badges a:hover {
   font-size: 15px;
@@ -10987,6 +10988,7 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
 .recipe-tags {
   color: #7c7c7c;
   font-family: "Calligraffitti", cursive;
-  font-size: 30px;
+  font-size: 3vh;
   margin-bottom: 0px;
+  padding-right: 3px;
 }

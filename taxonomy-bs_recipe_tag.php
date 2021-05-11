@@ -19,7 +19,7 @@
 
         <div class="row">
         <?php get_sidebar(); ?>
-            <div class="col order-first order-md-last">
+            <div class="col order-md-last">
           
 
                 <main id="main" class="site-main">
