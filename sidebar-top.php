@@ -7,13 +7,11 @@
 	 * @package Bootscore
 	 */
 	
-	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+	if ( ! is_active_sidebar( 'top-sidebar' ) ) {
 		return;
 	}
 	?>
-<div class="col-md-4 col-xxl-3 mt-4 mt-md-0">
-	<aside id="blog-sidebar" class="widget-area">
-		<?php dynamic_sidebar( 'sidebar-1' ); ?>
-	</aside>
+<div class="row top-sidebar d-flex flex-wrap">
+		<?php dynamic_sidebar( 'top-sidebar' ); ?>
 	<!-- #secondary -->
 </div>

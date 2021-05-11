@@ -128,3 +128,29 @@
     margin-bottom: 25px;
 }
 
+.top-sidebar {
+    
+    .widget {
+       
+            display: inline-block;
+            
+            zoom: 1;
+            
+            display: inline;
+          
+            width: 250px;
+            
+            vertical-align: top;
+
+                .gallery {
+                    
+                    margin: auto;
+
+                    img:hover {
+
+                        opacity: 0.2;
+                }
+                
+            }
+    }
+}

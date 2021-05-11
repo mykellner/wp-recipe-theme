@@ -11085,3 +11085,17 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
 .content-row-1 {
   margin-bottom: 25px;
 }
+
+.top-sidebar .widget {
+  display: inline-block;
+  zoom: 1;
+  display: inline;
+  width: 250px;
+  vertical-align: top;
+}
+.top-sidebar .widget .gallery {
+  margin: auto;
+}
+.top-sidebar .widget .gallery img:hover {
+  opacity: 0.2;
+}

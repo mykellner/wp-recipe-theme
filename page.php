@@ -36,6 +36,10 @@
                 <!-- .entry-header -->
             </header>
             <div class="entry-content">
+
+            <div class="row d-flex">
+            <?php get_sidebar('top'); ?>
+            </div>
                 <!-- Content -->
                 <?php the_content(); ?>
                 <!-- .entry-content -->

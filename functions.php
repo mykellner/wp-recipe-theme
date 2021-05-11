@@ -190,7 +190,7 @@ if ( ! function_exists( 'bootscore_widgets_init' ) ) :
 
           // Blog-sidebar for blog
           register_sidebar( array(
-            'name'          => esc_html__( 'Blog-sidebar', 'bootscore' ),
+            'name'          => esc_html__( 'Blog Sidebar', 'bootscore' ),
             'id'            => 'blog-sidebar',
             'description'   => esc_html__( 'Add widgets here.', 'bootscore' ),
             'before_widget' => '<section id="%1$s" class="widget %2$s card card-body mb-4 bg-light border-0">',
@@ -199,6 +199,18 @@ if ( ! function_exists( 'bootscore_widgets_init' ) ) :
             'after_title'   => '</h2>',
         ) );
         // Blog-sidebar End
+
+        // Home-sidebar top
+          register_sidebar( array(
+            'name'          => esc_html__( 'Top Page', 'bootscore' ),
+            'id'            => 'top-sidebar',
+            'description'   => esc_html__( 'Add widgets here.', 'bootscore' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s card card-body mb-4 bg-light border-0">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2 class="widget-title card-title border-bottom py-2">',
+            'after_title'   => '</h2>',
+        ) );
+        // Home-sidebar top
 
         // Top Footer
         register_sidebar(array(
