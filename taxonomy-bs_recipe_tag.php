@@ -35,7 +35,7 @@
                     <!-- Grid Layout -->
                     <?php if (have_posts() ) : ?>
                     <?php while (have_posts() ) : the_post(); ?>
-                    <div class="card horizontal mb-4">
+                    <div class="card horizontal mb-4 card-archive">
                         <div class="row">
                             <!-- Featured Image-->
                             <?php if (has_post_thumbnail() )

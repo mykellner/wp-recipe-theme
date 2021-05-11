@@ -56,8 +56,41 @@
 .navbar-brand  {
     
     img {
-        
+
         border-radius: 50%;
     
     }
 }
+
+.card {
+
+    .card-text a {
+
+        color: whitesmoke;
+    }
+
+    .card-footer {
+
+        min-height: 55px;
+    }
+}
+
+
+.recipe-tags-badges {
+
+    margin-top: 2px;
+
+    a:hover {
+        
+        font-size: 15px;
+    }
+}
+
+.card-archive {
+
+    border-radius: 5px;
+    margin-bottom: 25px;
+    
+}
+
+
