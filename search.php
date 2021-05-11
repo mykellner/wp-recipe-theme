@@ -16,6 +16,7 @@
         <?php bs_after_primary(); ?>
 
         <div class="row">
+		<?php get_sidebar(); ?>
             <div class="col">
 
                 <main id="main" class="site-main">
@@ -57,7 +58,6 @@
                 </main><!-- #main -->
 
             </div><!-- col -->
-            <?php get_sidebar(); ?>
         </div><!-- row -->
 
     </div><!-- #primary -->
