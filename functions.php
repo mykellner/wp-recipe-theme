@@ -109,10 +109,13 @@ if ( ! function_exists( 'bootscore_setup' ) ) :
             'flex-height' => true,
         ]);
     
-
+        add_image_size('recipe-archive', 469, 300, true);
 	}
 endif;
+
 add_action( 'after_setup_theme', 'bootscore_setup' );
+
+
 
 
 

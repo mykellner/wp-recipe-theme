@@ -429,3 +429,41 @@ if (!function_exists('bootscore_recipe_tags_badge')) {
 		echo '</div>';
 	}
 }
+
+if (!function_exists('bootscore_recipe_tags_badge_limited')) {
+	function bootscore_recipe_tags_badge_limited()
+	{
+		$tags = get_the_terms(get_the_ID(), 'bs_recipe_tag');
+
+		if (!$tags) {
+			return;
+		}
+
+		echo '<div class="recipe-tags-badges mb-2">';
+
+		$badges = [];
+		$length = 0;
+
+		foreach ($tags as $tag) {
+
+			if($length < 3) {
+		
+				$tag_url = get_term_link($tag, 'bs_recipe_tag');
+
+				$badge = sprintf(
+					'<a href="%s" class="badge bg-secondary">%s</a>',
+					$tag_url,
+					$tag->name
+				);
+
+				array_push($badges, $badge);
+				$length = sizeof($badges);
+			}
+
+		}
+
+		echo implode(' ', $badges);
+
+		echo '</div>';
+	}
+}

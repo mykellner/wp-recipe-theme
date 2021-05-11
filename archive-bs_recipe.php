@@ -33,14 +33,15 @@
 
                     <!-- Grid Layout -->
                     <?php if (have_posts() ) : ?>
+                    <div class="row">
                     <?php while (have_posts() ) : the_post(); ?>
-                    <div class="card horizontal card-archive mb-4">
-                        <div class="row">
+                    <div class="col-lg-6">
+                    <div class="card card-archive mb-4">
                             <!-- Featured Image-->
                             <?php if (has_post_thumbnail() )
-							echo '<div class="card-img-left-md col-lg-5">' . get_the_post_thumbnail(null, 'medium') . '</div>';
+							echo '<div class="card-img">' . get_the_post_thumbnail(null, 'recipe-archive') . '</div>';
 							?>
-                            <div class="col d-flex">
+                        
                                 <div class="card-body">
                                     
                                     <?php bootscore_recipe_category_badge(); ?>
@@ -58,17 +59,19 @@
                                         <?php the_excerpt(); ?> <a class="read-more btn btn-primary" href="<?php the_permalink(); ?>"><?php _e('Read more »', 'bootscore'); ?></a>
                                     </div>
                                     
-                                </div>
-                            </div>
+                                
+                            
                         </div>
                         <div class="card-footer d-flex justify-content-between">
                             <p class="recipe-tags"><?php _e('Recipe tags: ', 'bootscore'); ?></p>
                             <div class="wrapper d-flex flex-row-reverse">
-                            <?php bootscore_recipe_tags_badge(); ?>
+                            <?php bootscore_recipe_tags_badge_limited(); ?>
                             </div>
                         </div>
                     </div>
+                    </div>
                     <?php endwhile; ?>
+                    </div>
                     <?php endif; ?>
 
                     <!-- Pagination -->
