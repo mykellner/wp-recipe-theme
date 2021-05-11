@@ -116,7 +116,12 @@ endif;
 add_action( 'after_setup_theme', 'bootscore_setup' );
 
 
+// custom excerpt length. 
 
+function bs_excerpt_length($length) {
+	return 20;
+}
+add_filter('excerpt_length', 'bs_excerpt_length', 10, 1);
 
 
 

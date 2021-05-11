@@ -11063,11 +11063,17 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
   border-radius: 5px;
   margin-bottom: 25px;
 }
+.card-archive .card-body {
+  min-height: 275px;
+}
+.card-archive .card-body .recipe-archive-card-text {
+  min-height: 126px;
+}
 
 .recipe-tags {
   color: #7c7c7c;
   font-family: "Calligraffitti", cursive;
-  font-size: 3vh;
+  font-size: 20px;
   margin-bottom: 0px;
   padding-right: 3px;
 }

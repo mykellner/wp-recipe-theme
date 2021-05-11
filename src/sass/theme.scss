@@ -65,15 +65,18 @@
 
 .card {
 
-    .card-text a {
+    .card-text {
 
-        color: whitesmoke;
+        a {
+
+            color: whitesmoke;
+        }
     }
+    
 
     .card-footer {
 
         min-height: 55px;
-
 
         .recipe-tags-badges {
 
@@ -93,6 +96,17 @@
 
     border-radius: 5px;
     margin-bottom: 25px;
+
+    .card-body {
+
+        min-height: 275px;
+
+        .recipe-archive-card-text {
+        
+            min-height: 126px;
+        }
+    }
+
     
 }
 
@@ -100,7 +114,7 @@
 
     color: rgb(124, 124, 124);
     font-family:'Calligraffitti', cursive;
-    font-size: 3vh;
+    font-size: 20px;
     margin-bottom: 0px;
     padding-right: 3px;
 }

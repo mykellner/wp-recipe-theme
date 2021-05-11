@@ -55,7 +55,7 @@
                                     <!-- Meta -->
                                  
                                     <!-- Excerpt & Read more -->
-                                    <div class="card-text mt-auto">
+                                    <div class="card-text recipe-archive-card-text mt-auto">
                                         <?php the_excerpt(); ?> <a class="read-more btn btn-primary" href="<?php the_permalink(); ?>"><?php _e('Read more »', 'bootscore'); ?></a>
                                     </div>
                                     
