@@ -34,6 +34,7 @@
 }
 
 .site-title-header {
+
     font-family: 'Fjalla One', sans-serif;
 }
 
@@ -72,20 +73,21 @@
     .card-footer {
 
         min-height: 55px;
+
+
+        .recipe-tags-badges {
+
+            margin-top: 3px;
+            margin-bottom: 0px;
+
+            a:hover {
+                
+                font-size: 13px;
+            }
+        }
     }
 }
 
-
-.recipe-tags-badges {
-
-    margin-top: 3px;
-    margin-bottom: 0px;
-
-    a:hover {
-        
-        font-size: 15px;
-    }
-}
 
 .card-archive {
 
@@ -101,4 +103,13 @@
     font-size: 3vh;
     margin-bottom: 0px;
     padding-right: 3px;
+}
+
+.ingredient-col {
+
+    border-right: 1px solid lightgray;
+}
+
+.content-row-1 {
+    margin-bottom: 25px;
 }

@@ -14,7 +14,7 @@
         <?php the_breadcrumb(); ?>
 
         <div class="row">
-            
+
         <?php get_sidebar(); ?>
 
             <div class="col-md-8 col-xxl-9">
@@ -23,7 +23,6 @@
 
                     <header class="entry-header">
                         <?php the_post(); ?>
-                        <?php bootscore_category_badge(); ?>
                         <?php the_title('<h1>', '</h1>'); ?>
                         <?php bootscore_recipe_category_badge(); ?>
                         <p class="entry-meta">
@@ -39,10 +38,20 @@
                     </header>
 
                     <div class="entry-content">
-                        <?php bootscore_recipe_servings(); ?>
-                        <?php bootscore_recipe_ingredients(); ?>
-                        <?php bootscore_recipe_instructions(); ?>
+                        <div class="row content-row-1">
                         <?php the_content(); ?>
+                        <div class="tag-badge-singel"> <?php bootscore_recipe_tags_badge(); ?></div>
+                        </div>
+                        <div class="row content-row-2">
+                            <div><?php bootscore_recipe_servings(); ?></div>
+                            <div class="col-lg-4 ingredient-col">
+                                <?php bootscore_recipe_ingredients(); ?>
+                            </div>
+                            <div class="col-lg-6">
+                                <?php bootscore_recipe_instructions(); ?>
+                            </div>
+                        </div>
+                        
                     </div>
 
                     <footer class="entry-footer clear-both">
