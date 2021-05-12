@@ -19,6 +19,7 @@
 				<div class="card-body">
 					
                     <?php bootscore_recipe_category_badge(); ?>
+                    <?php bootscore_category_badge(); ?>
                     
 					<!-- Title -->
 					<h2 class="blog-post-title">
@@ -41,12 +42,14 @@
 					<div class="card-text mt-auto">
 						<?php the_excerpt(); ?> <a class="read-more btn btn-primary" href="<?php the_permalink(); ?>"><?php _e('Read more »', 'bootscore'); ?></a>
 					</div>
+					<?php if(get_post_type() == 'bs_recipe') : ?>
 					<div class="card-footer d-flex justify-content-between mt-4">
                             <p class="recipe-tags"><?php _e('Tags: ', 'bootscore'); ?></p>
                             <div class="wrapper d-flex flex-row-reverse">
                             	<?php bootscore_recipe_tags_badge(); ?>
                             </div>
                     </div>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
