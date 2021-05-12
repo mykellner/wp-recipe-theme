@@ -16,7 +16,6 @@
         <?php bs_after_primary(); ?>
 
         <div class="row">
-		<?php get_sidebar(); ?>
             <div class="col">
 
                 <main id="main" class="site-main">
@@ -32,6 +31,8 @@
                         </h1>
                     </header>
 
+					<div class="row">
+
                     <?php
 					/* Start the Loop */
 					while ( have_posts() ) :
@@ -42,7 +43,15 @@
 						 * If you want to overload this in a child theme then include a file
 						 * called content-search.php and that will be used instead.
 						 */
-						get_template_part( 'template-parts/content', 'search' );
+						
+						
+						
+						
+						get_template_part( 'template-parts/content', 'search' ); ?> 
+						
+						
+						
+						<?php
 					
 					endwhile;
 					
@@ -51,10 +60,12 @@
 					else :
 					
 					get_template_part( 'template-parts/content', 'none' );
+
+					?> </div> <?php
 					
 					endif;
 					?>
-
+					
                 </main><!-- #main -->
 
             </div><!-- col -->

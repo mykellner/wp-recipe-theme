@@ -8,12 +8,14 @@
 	 */
 	
 	?>
+
+<div class="col-12 col-md-6 col-lg-12">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="card horizontal mb-4">
 		<div class="row">
 			<!-- Featured Image-->
 			<?php if (has_post_thumbnail() )
-				echo '<div class="card-img-left-md col-lg-5">' . get_the_post_thumbnail(null, 'medium') . '</div>';
+				echo '<div class="card-img-left-md col-lg-4">' . get_the_post_thumbnail(null, 'recipe-archive') . '</div>';
 				?>
 			<div class="col">
 				<div class="card-body">
@@ -42,17 +44,11 @@
 					<div class="card-text mt-auto">
 						<?php the_excerpt(); ?> <a class="read-more btn btn-primary" href="<?php the_permalink(); ?>"><?php _e('Read more »', 'bootscore'); ?></a>
 					</div>
-					<?php if(get_post_type() == 'bs_recipe') : ?>
-					<div class="card-footer d-flex justify-content-between mt-4">
-                            <p class="recipe-tags"><?php _e('Tags: ', 'bootscore'); ?></p>
-                            <div class="wrapper d-flex flex-row-reverse">
-                            	<?php bootscore_recipe_tags_badge(); ?>
-                            </div>
-                    </div>
-					<?php endif; ?>
+				
 				</div>
 			</div>
 		</div>
 	</div>
 </article>
 <!-- #post-<?php the_ID(); ?> -->
+</div>

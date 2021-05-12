@@ -4,10 +4,10 @@
 			$title = post_type_archive_title('', false);
 
 		} else if (is_tax('bs_recipe_tag')) {
-			$title = single_term_title('', false);
+			$title = single_term_title(__('Tag: ', 'bootscore'), false);
 
 		} else if (is_tax('bs_recipe_category')) {
-			$title = single_term_title('', false);
+			$title = single_term_title(__('Category: ', 'bootscore'), false);
         }
         
         else {
