@@ -11033,11 +11033,11 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
   font-family: "Fjalla One", sans-serif;
 }
 
-#secondary a {
+#sidebar a {
   color: rgba(6, 7, 6, 0.829);
   text-decoration: none;
 }
-#secondary a:hover {
+#sidebar a:hover {
   color: #469c91;
 }
 
@@ -11056,7 +11056,7 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
   margin-bottom: 0px;
 }
 .card .card-footer .recipe-tags-badges a:hover {
-  font-size: 13px;
+  font-size: 11px;
 }
 
 .card-archive {

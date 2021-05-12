@@ -12,7 +12,7 @@
 	}
 	?>
 <div class="col-md-4 col-xxl-3 mt-4 mt-md-0">
-	<aside id="blog-sidebar" class="widget-area">
+	<aside id="sidebar" class="widget-area">
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
 	</aside>
 	<!-- #secondary -->
