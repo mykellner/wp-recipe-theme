@@ -22,7 +22,11 @@
 			class="img-fluid"
 		>
 		<div class="header-text-wrapper">
-			<div class="header-text display-2"><?php echo $title; ?> 
+            <?php $link = get_post_type_archive_link('bs_recipe'); ?>
+			<div class="header-text display-2"><span class="header-titel"><?php echo $title; ?> </span>
+            <?php if(is_page()) : ?>
+            <a href="<?php echo $link ?>" class="btn btn-primary header-button mt-3"> <?php _e('Find recipes..', 'bootscore') ?> » </a>
+            <?php endif; ?>
         </div>
             
 		</div>

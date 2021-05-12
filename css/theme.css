@@ -11021,6 +11021,12 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
   justify-content: center;
   align-items: center;
 }
+#site-header-img .header-text .header-button {
+  border: 1px solid #746f6f;
+}
+#site-header-img .header-text .header-button:hover {
+  transform: scale(1.1);
+}
 #site-header-img img {
   min-height: 20vh;
   max-height: 50vh;

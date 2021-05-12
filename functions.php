@@ -467,7 +467,7 @@ function bs_wp_head_customizer_css() {
 	$styles = [];
 
 	$header_textcolor = get_theme_mod('header_textcolor');
-	array_push($styles, "#site-header-img .header-text-wrapper {
+	array_push($styles, "#site-header-img .header-text-wrapper .header-titel {
 		color: #{$header_textcolor};
 	}");
 
@@ -479,7 +479,7 @@ function bs_wp_head_customizer_css() {
 			get_theme_mod('header_textshadow_blur_radius'),
 			get_theme_mod('header_textshadow_color')
 		);
-		array_push($styles, "#site-header-img .header-text-wrapper {
+		array_push($styles, "#site-header-img .header-text-wrapper .header-titel {
 			text-shadow: {$header_textshadow};
 		}");
 	}
