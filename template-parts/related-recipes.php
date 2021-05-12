@@ -42,15 +42,15 @@ if (!$related_recipes->have_posts()) {
 
 <hr />
 
-<h2>Related Recipes</h2>
+<h2><?php _e('Related Recipes', 'bootscore') ?></h2>
 
 
 <div class="row">
     <?php while ($related_recipes->have_posts()) : ?>
         <?php $related_recipes->the_post(); ?>
 
-            <div class="col-6 col-xl-3">
-                <article class="card mb-4">
+            <div class="col-6 col-lg-4 col-xxl-3">
+                <article class="card mb-4 related-card">
                     <?php the_post_thumbnail('thumbnail', ['class' => 'card-img-top img-fluid']); ?>
 
                     <div class="card-body">
@@ -59,12 +59,6 @@ if (!$related_recipes->have_posts()) {
                                 <?php the_title(); ?>
                             </a>
                         </h3>
-
-                        
-
-                        <p class="card-text">
-                            <?php bootscore_recipe_category_badge(); ?>
-                        </p>
 
                         <div>
                             <a href="<?php the_permalink(); ?>" class="btn btn-secondary"><?php _e('View Recipe &raquo;', 'bootscore') ?></a>

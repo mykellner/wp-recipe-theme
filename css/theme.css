@@ -11099,3 +11099,7 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
 .top-sidebar .widget .gallery img:hover {
   opacity: 0.2;
 }
+
+.related-card {
+  min-height: 350px;
+}

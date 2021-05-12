@@ -38,21 +38,23 @@
                     </header>
 
                     <div class="entry-content">
-                        <div class="row content-row-1 d-flex mt-5">
-                            <div class="col-9">
+                        <div class="row content-row-1 d-flex mt-5 ">
+                            <div class="col-12 col-lg-8 mt-2 mb-3">
                                 <?php the_content(); ?>
                                 <div class="tag-badge-singel"> <?php bootscore_recipe_tags_badge(); ?></div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-lg-4">
                                 <?php bootscore_recipe_gallery(); ?>
                             </div>
                         </div>
                         <div class="row content-row-2">
                             <div><?php bootscore_recipe_servings(); ?></div>
                             <div class="col-lg-4 ingredient-col">
+                                <h3><?php _e('You will need: ', 'bootscore') ?></h3>
                                 <?php bootscore_recipe_ingredients(); ?>
                             </div>
                             <div class="col-lg-6">
+                                <h3><?php _e('Do it like this: ', 'bootscore') ?></h3>
                                 <?php bootscore_recipe_instructions(); ?>
                             </div>
                         </div>
