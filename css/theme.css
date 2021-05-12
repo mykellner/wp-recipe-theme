@@ -11103,3 +11103,16 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
 .related-card {
   min-height: 350px;
 }
+
+h2, .h2 {
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 1px;
+}
+
+#site-header-img {
+  box-shadow: 0 28px 16px -26px black;
+}
+
+#nav-main {
+  box-shadow: 0 28px 16px -26px black;
+}
