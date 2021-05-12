@@ -161,6 +161,14 @@ jQuery(document).ready(function ($) {
   $('.alert a').addClass('alert-link');
 }); // jQuery End
 
+/*--------------------------------------------------------------
+3. Flexslider
+--------------------------------------------------------------*/
+
+jQuery(document).ready(function ($) {
+  $('.flexslider').flexslider();
+});
+
 /***/ }),
 
 /***/ "./src/sass/theme.scss":

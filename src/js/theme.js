@@ -172,3 +172,13 @@ jQuery(document).ready(function ($) {
 
 
 }); // jQuery End
+
+
+
+/*--------------------------------------------------------------
+3. Flexslider
+--------------------------------------------------------------*/
+ 
+jQuery(document).ready(function ($) {
+    $('.flexslider').flexslider();
+   });
