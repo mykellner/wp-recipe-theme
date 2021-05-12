@@ -38,9 +38,14 @@
                     </header>
 
                     <div class="entry-content">
-                        <div class="row content-row-1">
-                            <?php the_content(); ?>
+                        <div class="row content-row-1 d-flex mt-5">
+                            <div class="col-9">
+                                <?php the_content(); ?>
                                 <div class="tag-badge-singel"> <?php bootscore_recipe_tags_badge(); ?></div>
+                            </div>
+                            <div class="col-3">
+                                <?php bootscore_recipe_gallery(); ?>
+                            </div>
                         </div>
                         <div class="row content-row-2">
                             <div><?php bootscore_recipe_servings(); ?></div>
@@ -51,8 +56,6 @@
                                 <?php bootscore_recipe_instructions(); ?>
                             </div>
                         </div>
-
-                        <?php bootscore_recipe_gallery(); ?>
                         
                     </div>
 
