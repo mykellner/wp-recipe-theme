@@ -60,18 +60,7 @@
                     </div>
 
                     <footer class="entry-footer clear-both">
-                        <div class="mb-4">
-                        </div>
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item">
-                                    <?php previous_post_link('%link'); ?>
-                                </li>
-                                <li class="page-item">
-                                    <?php next_post_link('%link'); ?>
-                                </li>
-                            </ul>
-                        </nav>
+                        <?php get_template_part('template-parts/related-recipes'); ?>
                     </footer>
 
                     <?php comments_template(); ?>
