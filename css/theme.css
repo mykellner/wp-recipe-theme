@@ -11111,12 +11111,12 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
   min-height: 350px;
 }
 
-h2, .h2 {
+h2, .h2, .page-header h1, .page-header .h1 {
   font-family: "Fjalla One", sans-serif;
   letter-spacing: 1px;
 }
 
-#site-header-img {
+.site-header-img {
   box-shadow: 0 28px 16px -26px black;
 }
 

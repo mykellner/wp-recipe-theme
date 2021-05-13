@@ -19,7 +19,7 @@
                 <main id="main" class="site-main">
 
                     <header class="entry-header">
-                        <h2>single.php</h2>
+
                         <?php the_post(); ?>
                         <?php bootscore_category_badge(); ?>
                         <?php the_title('<h1>', '</h1>'); ?>
@@ -60,7 +60,7 @@
                 </main> <!-- #main -->
 
             </div><!-- col -->
-            <?php get_sidebar(); ?>
+            <?php get_sidebar('blog'); ?>
         </div><!-- row -->
 
     </div><!-- #primary -->

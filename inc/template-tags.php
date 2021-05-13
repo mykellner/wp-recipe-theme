@@ -20,7 +20,7 @@ if (!function_exists('bootscore_category_badge')) :
 			$i = 0;
 			foreach (get_the_category() as $category) {
 				if (0 < $i) $thelist .= ' ';
-				$thelist .= '<a href="' . esc_url(get_category_link($category->term_id)) . '" class="badge bg-secondary">' . $category->name . '</a>';
+				$thelist .= '<a href="' . esc_url(get_category_link($category->term_id)) . '" class="badge bg-success">' . $category->name . '</a>';
 				$i++;
 			}
 			echo $thelist;
