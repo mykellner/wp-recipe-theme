@@ -58,7 +58,6 @@ get_template_part('template-parts/header-image');
                                                 <?php the_excerpt(); ?> <a class="read-more btn btn-primary" href="<?php the_permalink(); ?>"><?php _e('Read more »', 'bootscore'); ?></a>
                                             </div>
                                             <div class="card-footer d-flex justify-content-between mt-4">
-                                                <p class="recipe-tags mt-1"><?php _e('Tags: ', 'bootscore'); ?></p>
                                                 <div class="wrapper d-flex flex-row-reverse">
                                                     <?php bootscore_recipe_tags_badge_limited(); ?>
                                                 </div>

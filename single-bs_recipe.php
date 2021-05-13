@@ -39,11 +39,11 @@
 
                     <div class="entry-content">
                         <div class="row content-row-1 d-flex mt-5 ">
-                            <div class="col-12 col-lg-8 mt-2 mb-3">
+                            <div class="col-12 mt-2 mb-3">
                                 <?php the_content(); ?>
                                 <div class="tag-badge-singel"> <?php bootscore_recipe_tags_badge(); ?></div>
                             </div>
-                            <div class="col-12 col-lg-4">
+                            <div class="col-12 d-flex justify-content-center">
                                 <?php bootscore_recipe_gallery(); ?>
                             </div>
                         </div>
