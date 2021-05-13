@@ -467,7 +467,7 @@ function bs_wp_head_customizer_css() {
 	$styles = [];
 
 	$header_textcolor = get_theme_mod('header_textcolor');
-	array_push($styles, "#site-header-img .header-text-wrapper .header-titel {
+	array_push($styles, ".site-header-img .header-text-wrapper .header-title {
 		color: #{$header_textcolor};
 	}");
 
@@ -479,7 +479,7 @@ function bs_wp_head_customizer_css() {
 			get_theme_mod('header_textshadow_blur_radius'),
 			get_theme_mod('header_textshadow_color')
 		);
-		array_push($styles, "#site-header-img .header-text-wrapper .header-titel {
+		array_push($styles, ".site-header-img .header-text-wrapper .header-title {
 			text-shadow: {$header_textshadow};
 		}");
 	}
@@ -598,3 +598,6 @@ function bs_navbar_brand() {
         echo get_bloginfo('name');
     }
 }
+
+
+

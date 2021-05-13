@@ -11007,10 +11007,10 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
   -webkit-appearance: none;
 }
 
-#site-header-img {
+.site-header-img {
   position: relative;
 }
-#site-header-img .header-text {
+.site-header-img .header-text {
   position: absolute;
   bottom: 0;
   top: 0;
@@ -11021,13 +11021,14 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
   justify-content: center;
   align-items: center;
 }
-#site-header-img .header-text .header-button {
+.site-header-img .header-text .header-button {
   border: 1px solid #746f6f;
+  color: #e4e1e1;
 }
-#site-header-img .header-text .header-button:hover {
+.site-header-img .header-text .header-button:hover {
   transform: scale(1.1);
 }
-#site-header-img img {
+.site-header-img img {
   min-height: 20vh;
   max-height: 50vh;
   -o-object-fit: cover;
