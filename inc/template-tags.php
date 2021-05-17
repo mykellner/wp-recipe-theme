@@ -295,6 +295,7 @@ if (!function_exists('bootscore_recipe_servings')) {
 			printf(
 				'<div class="badge bg-success mb-2">%s</div>',
 				sprintf(
+					/* translators: servings per recipe */
 					__('Servings: <strong> %s </strong>', 'bootscore'),
 					$servings
 				)
