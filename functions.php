@@ -13,6 +13,10 @@
 // WooCommerce End
 
 
+require_once('inc/custom-post-types.php');
+require_once('inc/custom-taxonomies.php');
+
+
 require get_template_directory() . '/inc/acf-loader.php';
 
 
