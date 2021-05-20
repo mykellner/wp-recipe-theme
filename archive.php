@@ -80,7 +80,7 @@
 
             </div><!-- col -->
 
-            <?php get_sidebar(); ?>
+            <?php get_sidebar('blog'); ?>
         </div><!-- row -->
 
     </div><!-- #primary -->
